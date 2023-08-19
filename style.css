@@ -7,7 +7,7 @@
 header {
     min-height: 65vh;
     width: 100%;
-    background-image: radial-gradient(#42108b 0%, #3e0f83 20%, #350c74 50%, #24004e 100%);
+    background-image: radial-gradient(#481d8a 0%, #421d79 20%, #38146e 50%, #2c0d4e 100%);
     position: relative;
     background-size: cover;
     background-position: center;
@@ -62,7 +62,195 @@ nav {
     text-shadow: 0 0 6px #ffffff;
 }
 
-.хуй {
+.box {
+    background: #202020;
+    border-radius: 15px;
+    max-width: 700px;
+    padding: 15px;
+    margin: 30px 60px 30px 0;
+    color: #ffffffd0;
     position: relative;
-    
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: 0 0 6px #0000001a;
+    transition: ease-in-out 0.12s;
+}
+
+.box:hover {
+    box-shadow: 0 0 15px #0000004a;
+    transform: translate(-50%, -3px);
+}
+.box-top {
+    background-image: linear-gradient(#4e248d 0%, #49257e 20%, #422272 50%, #3a1763 100%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    max-width: 700px;
+    padding: 15px;
+    margin: -15px;
+    margin-bottom: 15px;
+}
+
+footer {
+    /* margin-top: 30px; */
+    margin: 60px 0;
+}
+.footer-grad {
+    align-self: center;
+    max-width: 250px;
+    min-width: 50px;
+    width: 25%;
+    height: 2px
+}
+.footer-text {
+    color: #ffffff50;
+    position:relative;
+    margin: 0 15px;
+    height: 2px;
+    translate: 0 -10px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.left {
+    background-image: linear-gradient(90deg, #ffffff00, #ffffff50);
+}
+.right {
+    background-image: linear-gradient(270deg, #ffffff00, #ffffff50);
+}
+.footer-name {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.title {
+    justify-content: center;
+    display: flex;
+    align-items: stretch;
+    top: 50%;
+    color: #ffffffd0;
+}
+.title-name {
+    animation: 2.5s infinite alternate titleNameGlow;
+    font-size: 3vw;
+}
+.title-desc {
+    animation: 2.5s infinite alternate titleDescGlow;
+    font-size: 2.2vw;
+    font-weight:500;
+}
+.title div {
+    align-self: center;
+    margin: 3vw;
+    margin-top: 15vh;
+}
+
+.under-construction {
+    background-image: repeating-linear-gradient(
+        45deg,
+        #ffe040,
+        #ffe040 15px,
+        #ead030 15px,
+        #ead030 30px
+    );
+    height: 40px;
+}
+.under-construction p {
+    padding: 10px 0;
+    font-weight: 700;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+@keyframes titleDescGlow {
+    from {
+        text-shadow: 0 0 2px #ffffffa6, 0 0 3px #ffffff25;
+    }
+    to {
+        text-shadow: 0 0 2px #ffffff63, 0 0 6px #ffffff85;
+    }
+}
+@keyframes titleNameGlow {
+    from {
+        text-shadow: 0 0 2px #ffffffab, 0 0 4px #ffffff56;
+    }
+    to {
+        text-shadow: 0 0 4px #ffffff, 0 0 12px #ffffff56;
+    }
+}
+
+@media(max-width: 700px) {
+    .title-name {
+        font-size: 32px;
+    }
+    .title-desc {
+        font-size: 21px;
+    }
+    .title {
+        display: block;
+        text-align: center;
+    }
+    .title div {
+        margin-top: 17vh;
+    }
+    .title div:nth-child(2) {
+        margin-top: 6vh;
+    }
+}
+
+.too-small-screen {
+    display: none;
+}
+
+@media(max-width: 400px) {
+    header {
+        display: none;
+    }
+    .elements {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    .under-construction {
+        display: none;
+    }
+
+    .too-small-screen {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #252525;
+        color: #fff;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+        
+    }
+}
+
+@media(max-height: 500px) {
+    header {
+        display: none;
+    }
+    .elements {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    .under-construction {
+        display: none;
+    }
+
+    .too-small-screen {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #252525;
+        color: #fff;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+    }
 }
