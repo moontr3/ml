@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    line-height: 140%;
 }
 
 header {
@@ -62,6 +63,74 @@ nav {
     text-shadow: 0 0 6px #ffffff;
 }
 
+.bold {
+    background: #80808030;
+    border-radius: 4px;
+    padding: 2px 5px;
+    margin: 0px 0px 8px 0px;
+    width: fit-content;
+
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px
+}
+
+.text-button {
+    background: #80808030;
+    border-radius: 4px;
+    padding: 2px 5px;
+    margin: 0px 0px 8px 0px;
+    width: fit-content;
+
+    color: #ffffffd0;
+    font-weight: 500;
+    font-size: 14px;
+}
+.text-button:hover {
+    background: #80808060;
+    color: #fff;
+}
+.text-button:active {
+    background: #80808040;
+
+    color: #fff;
+}
+
+.mono {
+    background: #80808018;
+    border-radius: 4px;
+    padding: 2px 5px;
+    margin: 0px 0px 2px 0px;
+    width: fit-content;
+    height:fit-content;
+
+    font-size: 14px
+}
+
+.row {
+    display: flex;
+    align-items: stretch;
+    font-size: 16px;
+    column-gap: 3px;
+    flex-wrap: wrap;
+}
+.box-arg {
+    background: #00000028;
+    padding: 5px 9px;
+    border-radius: 7px;
+    margin-left: 10px;
+    width: fit-content;
+}
+.box-arg-optional {
+    background: #0000001a;
+    color: #ffffff80; 
+    padding: 6px 8px;
+    border-radius: 7px;
+    margin-left: 10px;
+
+    font-size: 14px;
+}
+
 .box {
     background: #202020;
     border-radius: 15px;
@@ -88,6 +157,10 @@ nav {
     padding: 15px;
     margin: -15px;
     margin-bottom: 15px;
+    
+    display: flex;
+    align-items: stretch;
+    font-size: 16px
 }
 
 footer {
